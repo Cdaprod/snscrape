@@ -1,0 +1,12 @@
+name: Snscrape Dispatch Workflow
+on:
+  repository_dispatch:
+    types: [trigger-snscrape]
+jobs:
+  run-snscrape:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Run Snscrape
+      run: echo "Place your snscrape commands or scripts here"
